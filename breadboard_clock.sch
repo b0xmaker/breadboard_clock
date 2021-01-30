@@ -58,12 +58,12 @@ F 3 "~" H 3050 1650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_POT e
+L Device:R_POT e101
 U 1 1 6015012D
 P 3450 1650
-F 0 "e" H 3380 1604 50  0000 R CNN
+F 0 "e101" H 3380 1604 50  0000 R CNN
 F 1 "R_POT" H 3380 1695 50  0000 R CNN
-F 2 "" H 3450 1650 50  0001 C CNN
+F 2 "Gerig-Added:Potentiomter_Bourns_PDB12_THT" H 3450 1650 50  0001 C CNN
 F 3 "~" H 3450 1650 50  0001 C CNN
 	1    3450 1650
 	-1   0    0    1   
@@ -140,7 +140,7 @@ U 1 1 6015C3A9
 P 4600 1500
 F 0 "SW101" H 4600 1785 50  0000 C CNN
 F 1 "SW_Push" H 4600 1694 50  0000 C CNN
-F 2 "" H 4600 1700 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 4600 1700 50  0001 C CNN
 F 3 "~" H 4600 1700 50  0001 C CNN
 	1    4600 1500
 	1    0    0    -1  
@@ -184,7 +184,7 @@ U 1 1 60166A4D
 P 7800 1800
 F 0 "SW102" H 7800 2085 50  0000 C CNN
 F 1 "SW_SPDT" H 7800 1994 50  0000 C CNN
-F 2 "" H 7800 1800 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 7800 1800 50  0001 C CNN
 F 3 "~" H 7800 1800 50  0001 C CNN
 	1    7800 1800
 	1    0    0    -1  
@@ -682,4 +682,49 @@ Wire Wire Line
 	7250 4300 8500 4300
 Wire Wire Line
 	8050 3800 8500 3800
+Text Notes 7350 7500 0    50   ~ 0
+Breadboard Clock Module
+Text Notes 8150 7650 0    50   ~ 0
+29 Jan 2021
+Text Notes 7050 6650 0    50   ~ 0
+Based off Ben Eater's Breadboard clock module: eater.net/8bit/clock
+Text Notes 7280 7250 0    50   ~ 0
+1
+Text Notes 7380 7250 0    50   ~ 0
+1
+Text Notes 10550 7650 0    50   ~ 0
+0
+$Comp
+L power:VCC #PWR0110
+U 1 1 6040569A
+P 9800 3900
+F 0 "#PWR0110" H 9800 3750 50  0001 C CNN
+F 1 "VCC" H 9700 4000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9800 3900 50  0001 C CNN
+F 3 "" H 9800 3900 50  0001 C CNN
+	1    9800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 60406039
+P 9900 3900
+F 0 "#PWR0111" H 9900 3650 50  0001 C CNN
+F 1 "GND" H 9750 3800 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9900 3900 50  0001 C CNN
+F 3 "" H 9900 3900 50  0001 C CNN
+	1    9900 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J101
+U 1 1 6040D82B
+P 9800 4100
+F 0 "J101" V 9954 3912 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 9863 3912 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Right" V 9817 3912 50  0001 R CNN
+F 3 "~" H 9800 4100 50  0001 C CNN
+	1    9800 4100
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

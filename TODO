@@ -1,0 +1,5 @@
+#nix HALT line
+#nix U4, use OR gate conversion
+#add +/- 15V eurorack output with 3.5mm outputs
+#add micro USB power adapter
+#add ~CLK output

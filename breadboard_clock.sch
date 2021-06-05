@@ -395,7 +395,6 @@ Wire Wire Line
 	4790 1700 4790 2000
 Wire Wire Line
 	4790 2300 4790 2400
-Connection ~ 4790 2650
 Connection ~ 4790 2400
 Wire Wire Line
 	4790 2400 4790 2550
@@ -468,8 +467,6 @@ Wire Wire Line
 Connection ~ 10640 1500
 Wire Wire Line
 	10640 1500 10840 1500
-Text GLabel 3690 5525 2    50   Input ~ 0
-HALT
 Wire Wire Line
 	8040 4650 8040 4750
 Wire Wire Line
@@ -542,9 +539,9 @@ F 3 "~" H 9990 4950 50  0001 C CNN
 	1    9990 4950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9890 4650 1    50   Input ~ 0
-CLK
 Text GLabel 9990 4650 1    50   Input ~ 0
+CLK
+Text GLabel 9890 4650 1    50   Input ~ 0
 ~CLK
 Text GLabel 10090 4650 1    50   Input ~ 0
 GND
@@ -727,39 +724,6 @@ F 3 "~" H 10565 3850 50  0001 C CNN
 	1    10565 3850
 	-1   0    0    1   
 $EndComp
-$Comp
-L Gerig-Added:74LS32-Full U4
-U 1 1 60435E25
-P 6265 5275
-F 0 "U4" H 6240 5890 50  0000 C CNN
-F 1 "74LS32-Full" H 6240 5799 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5415 5775 50  0001 C CNN
-F 3 "" H 5865 5775 50  0001 C CNN
-	1    6265 5275
-	1    0    0    -1  
-$EndComp
-$Comp
-L Gerig-Added:74LS04-Full U2
-U 1 1 60437E78
-P 3240 5325
-F 0 "U2" H 3215 5940 50  0000 C CNN
-F 1 "74LS04-Full" H 3215 5849 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3190 5725 50  0001 C CNN
-F 3 "" H 3190 5725 50  0001 C CNN
-	1    3240 5325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Gerig-Added:74LS08-Full U3
-U 1 1 60439D22
-P 4765 5300
-F 0 "U3" H 4740 5915 50  0000 C CNN
-F 1 "74LS08-Full" H 4740 5824 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4665 5800 50  0001 C CNN
-F 3 "" H 4665 5800 50  0001 C CNN
-	1    4765 5300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3915 1500 4265 5000
 Wire Wire Line
@@ -781,30 +745,6 @@ Wire Wire Line
 Wire Wire Line
 	4140 5300 4265 5300
 Wire Wire Line
-	4265 5500 4165 5500
-Wire Wire Line
-	4165 5500 4165 5875
-Wire Wire Line
-	4165 5875 5615 5875
-Wire Wire Line
-	5615 5875 5615 5075
-Wire Wire Line
-	5615 5075 5765 5075
-Wire Wire Line
-	4265 5200 4165 5200
-Wire Wire Line
-	4165 5200 4165 4525
-Wire Wire Line
-	4165 4525 5615 4525
-Wire Wire Line
-	5615 4525 5615 4975
-Wire Wire Line
-	5615 4975 5765 4975
-Wire Wire Line
-	5215 5600 5215 5800
-Wire Wire Line
-	5215 5800 7140 5800
-Wire Wire Line
 	7140 5800 7140 4350
 Wire Wire Line
 	7140 4350 8040 4350
@@ -812,10 +752,7 @@ Connection ~ 8040 4350
 Wire Wire Line
 	8040 4350 8690 4350
 Wire Wire Line
-	5215 5800 4065 5800
-Wire Wire Line
 	4065 5125 3690 5125
-Connection ~ 5215 5800
 Wire Wire Line
 	4065 5125 4065 5800
 Wire Wire Line
@@ -835,38 +772,6 @@ Wire Wire Line
 	4190 3250 4190 5400
 Wire Wire Line
 	4190 5400 4265 5400
-Wire Wire Line
-	5465 5175 5465 5500
-Wire Wire Line
-	5465 5500 5215 5500
-Wire Wire Line
-	5465 5175 5765 5175
-Wire Wire Line
-	3690 5625 3690 5700
-Wire Wire Line
-	3690 5700 5390 5700
-Wire Wire Line
-	5390 5700 5390 5400
-Wire Wire Line
-	5390 5400 5215 5400
-NoConn ~ 2740 5225
-NoConn ~ 2740 5325
-NoConn ~ 2740 5425
-NoConn ~ 2740 5525
-NoConn ~ 3690 5325
-NoConn ~ 3690 5425
-NoConn ~ 5215 5100
-NoConn ~ 5215 5200
-NoConn ~ 5215 5300
-NoConn ~ 5765 5275
-NoConn ~ 5765 5375
-NoConn ~ 5765 5475
-NoConn ~ 6715 5075
-NoConn ~ 6715 5175
-NoConn ~ 6715 5275
-NoConn ~ 6715 5375
-NoConn ~ 6715 5475
-NoConn ~ 6715 5575
 $Comp
 L power:VCC #PWR0101
 U 1 1 606629F4
@@ -879,28 +784,6 @@ F 3 "" H 3690 5025 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR0102
-U 1 1 60664CD3
-P 5215 5000
-F 0 "#PWR0102" H 5215 4850 50  0001 C CNN
-F 1 "VCC" V 5232 5128 50  0000 L CNN
-F 2 "" H 5215 5000 50  0001 C CNN
-F 3 "" H 5215 5000 50  0001 C CNN
-	1    5215 5000
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0103
-U 1 1 6066BE77
-P 6715 4975
-F 0 "#PWR0103" H 6715 4825 50  0001 C CNN
-F 1 "VCC" V 6732 5103 50  0000 L CNN
-F 2 "" H 6715 4975 50  0001 C CNN
-F 3 "" H 6715 4975 50  0001 C CNN
-	1    6715 4975
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0104
 U 1 1 60677C06
 P 2740 5625
@@ -909,28 +792,6 @@ F 1 "GND" H 2745 5452 50  0000 C CNN
 F 2 "" H 2740 5625 50  0001 C CNN
 F 3 "" H 2740 5625 50  0001 C CNN
 	1    2740 5625
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 6067AC96
-P 4265 5600
-F 0 "#PWR0105" H 4265 5350 50  0001 C CNN
-F 1 "GND" H 4270 5427 50  0000 C CNN
-F 2 "" H 4265 5600 50  0001 C CNN
-F 3 "" H 4265 5600 50  0001 C CNN
-	1    4265 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 60682119
-P 5765 5575
-F 0 "#PWR0106" H 5765 5325 50  0001 C CNN
-F 1 "GND" H 5770 5402 50  0000 C CNN
-F 2 "" H 5765 5575 50  0001 C CNN
-F 3 "" H 5765 5575 50  0001 C CNN
-	1    5765 5575
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1003,8 +864,6 @@ Wire Wire Line
 	4630 1500 4890 1500
 Wire Wire Line
 	4630 1900 4630 2650
-Wire Wire Line
-	4630 2650 4790 2650
 Connection ~ 3650 1500
 Wire Wire Line
 	3650 2750 2090 2750
@@ -1017,8 +876,6 @@ Wire Wire Line
 	2590 2200 3290 2200
 Wire Wire Line
 	4790 2400 5840 2400
-Wire Wire Line
-	4790 2650 4795 2650
 Wire Wire Line
 	5190 1000 5840 1000
 Wire Wire Line
@@ -1041,17 +898,131 @@ $Comp
 L Device:C C9
 U 1 1 6029DDCC
 P 4210 1705
-F 0 "C9" H 4000 1955 50  0000 L CNN
-F 1 "0.1uF" H 3935 1865 50  0000 L CNN
+F 0 "C9" H 4215 1835 50  0000 L CNN
+F 1 "0.1uF" H 4220 1615 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4248 1555 50  0001 C CNN
 F 3 "~" H 4210 1705 50  0001 C CNN
 	1    4210 1705
 	1    0    0    -1  
 $EndComp
-Connection ~ 2540 2200
-Wire Wire Line
-	2540 2200 2590 2200
 Connection ~ 8540 1950
 Wire Wire Line
+	2540 2200 2590 2200
+Wire Wire Line
 	1440 2200 2590 2200
+$Comp
+L breadboard_clock-rescue:74LS04-Full-Gerig-Added U2
+U 1 1 60437E78
+P 3240 5325
+F 0 "U2" H 3215 5940 50  0000 C CNN
+F 1 "74LS04-Full" H 3215 5849 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3190 5725 50  0001 C CNN
+F 3 "" H 3190 5725 50  0001 C CNN
+	1    3240 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 6067AC96
+P 4265 5600
+F 0 "#PWR0105" H 4265 5350 50  0001 C CNN
+F 1 "GND" H 4270 5427 50  0000 C CNN
+F 2 "" H 4265 5600 50  0001 C CNN
+F 3 "" H 4265 5600 50  0001 C CNN
+	1    4265 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L breadboard_clock-rescue:74LS08-Full-Gerig-Added U3
+U 1 1 60439D22
+P 4765 5300
+F 0 "U3" H 4740 5915 50  0000 C CNN
+F 1 "74LS08-Full" H 4740 5824 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4665 5800 50  0001 C CNN
+F 3 "" H 4665 5800 50  0001 C CNN
+	1    4765 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2740 5225 2250 5225
+Wire Wire Line
+	2250 5225 2250 4540
+Wire Wire Line
+	2250 4540 4100 4540
+Wire Wire Line
+	4100 4540 4100 5200
+Wire Wire Line
+	2740 5325 2575 5325
+Wire Wire Line
+	2575 5325 2575 6065
+Wire Wire Line
+	2575 6065 5810 6065
+Wire Wire Line
+	5810 6065 5810 5200
+Wire Wire Line
+	5810 5200 5215 5200
+Wire Wire Line
+	2740 5425 2655 5425
+Wire Wire Line
+	2655 5425 2650 5975
+Wire Wire Line
+	2650 5975 3945 5975
+Wire Wire Line
+	3945 5975 3945 5500
+Wire Wire Line
+	3945 5500 4265 5500
+Wire Wire Line
+	2740 5525 2340 5525
+Wire Wire Line
+	2340 5525 2340 6205
+Wire Wire Line
+	2340 6205 5410 6205
+Wire Wire Line
+	5410 6205 5410 5100
+Wire Wire Line
+	5410 5100 5215 5100
+NoConn ~ 3690 5525
+NoConn ~ 3690 5625
+$Comp
+L power:VCC #PWR?
+U 1 1 60C9BE17
+P 5215 5000
+F 0 "#PWR?" H 5215 4850 50  0001 C CNN
+F 1 "VCC" V 5232 5128 50  0000 L CNN
+F 2 "" H 5215 5000 50  0001 C CNN
+F 3 "" H 5215 5000 50  0001 C CNN
+	1    5215 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5200 4265 5200
+Wire Wire Line
+	3690 5325 4030 5325
+Wire Wire Line
+	4030 5325 4030 5995
+Wire Wire Line
+	4030 5995 5375 5995
+Wire Wire Line
+	5375 5995 5375 5300
+Wire Wire Line
+	5375 5300 5215 5300
+Wire Wire Line
+	3815 5425 3815 6135
+Wire Wire Line
+	3815 6135 5320 6135
+Wire Wire Line
+	3690 5425 3815 5425
+Wire Wire Line
+	5320 6135 5320 5800
+Connection ~ 5320 5800
+Wire Wire Line
+	5320 5800 7140 5800
+Wire Wire Line
+	4065 5800 5320 5800
+Wire Wire Line
+	4630 2650 4790 2650
+Connection ~ 4790 2650
+NoConn ~ 5215 5400
+NoConn ~ 5215 5500
+NoConn ~ 5215 5600
 $EndSCHEMATC

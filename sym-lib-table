@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name breadboard_clock-rescue)(type Legacy)(uri ${KIPRJMOD}/breadboard_clock-rescue.lib)(options "")(descr ""))
+)

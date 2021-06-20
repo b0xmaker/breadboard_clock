@@ -19,7 +19,7 @@ U 1 1 6014C4C2
 P 6140 4150
 F 0 "U1" H 6440 3800 50  0000 C CNN
 F 1 "ICM7555" H 6340 4500 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 6140 4150 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6140 4150 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/icm7/icm7555-56.pdf" H 6140 4150 50  0001 C CNN
 	1    6140 4150
 	1    0    0    -1  
@@ -63,7 +63,7 @@ U 1 1 6015012D
 P 7340 4150
 F 0 "P1" H 7270 4104 50  0000 R CNN
 F 1 "1M" H 7270 4195 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_Bourns_3224X_Vertical" H 7340 4150 50  0001 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal" H 7340 4150 50  0001 C CNN
 F 3 "~" H 7340 4150 50  0001 C CNN
 	1    7340 4150
 	-1   0    0    1   
@@ -74,7 +74,7 @@ U 1 1 60159C52
 P 9890 4150
 F 0 "U5" H 10190 3800 50  0000 C CNN
 F 1 "ICM7555" H 10090 4500 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm" H 9890 4150 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9890 4150 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/icm7/icm7555-56.pdf" H 9890 4150 50  0001 C CNN
 	1    9890 4150
 	1    0    0    -1  
@@ -140,7 +140,7 @@ U 1 1 6015C3A9
 P 8680 4150
 F 0 "SW1" V 8910 4330 50  0000 C CNN
 F 1 "SW_Push" V 9000 4320 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 8680 4350 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1100P-B" H 8680 4350 50  0001 C CNN
 F 3 "~" H 8680 4350 50  0001 C CNN
 	1    8680 4150
 	0    -1   -1   0   
@@ -588,7 +588,7 @@ U 1 1 60162631
 P 13090 4200
 F 0 "U8" H 13390 3850 50  0000 C CNN
 F 1 "ICM7555" H 13290 4550 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm" H 13090 4200 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13090 4200 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/icm7/icm7555-56.pdf" H 13090 4200 50  0001 C CNN
 	1    13090 4200
 	1    0    0    -1  

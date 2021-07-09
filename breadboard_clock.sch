@@ -432,8 +432,6 @@ Text Notes 12120 10665 0    50   ~ 0
 1
 Text Notes 12220 10665 0    50   ~ 0
 1
-Text Notes 15395 11070 0    50   ~ 0
-0
 $Comp
 L power:GND #PWR09
 U 1 1 60406039
@@ -668,13 +666,6 @@ F 3 "~" H 11640 3955 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6140 4550 6140 5200
-Wire Wire Line
-	12340 5000 12590 5000
-Connection ~ 12590 5000
-Wire Wire Line
-	12590 5000 13090 5000
-Wire Wire Line
-	12590 4400 12590 5000
 $Comp
 L Device:C C8
 U 1 1 602972CF
@@ -747,7 +738,6 @@ F 3 "~" H 8260 4155 50  0001 C CNN
 	1    8260 4155
 	1    0    0    -1  
 $EndComp
-Connection ~ 12590 4400
 Wire Wire Line
 	5490 4650 6640 4650
 $Comp
@@ -1240,4 +1230,8 @@ Wire Notes Line
 	14200 5650 14200 2950
 Wire Notes Line
 	14200 2950 11400 2950
+Wire Wire Line
+	12340 5000 13090 5000
+Text Notes 15395 11070 0    50   ~ 0
+1
 $EndSCHEMATC
